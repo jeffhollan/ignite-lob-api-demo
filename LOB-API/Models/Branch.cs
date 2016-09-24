@@ -8,6 +8,7 @@ namespace LOB_API.Models
     public class Branch
     {
         public Address Address { get; set; }
+        public string Title { get; set; }
         public string Phone_Number { get; set; }
         public string Manager_Name { get; set; }
         public string Manager_Email { get; set; }
