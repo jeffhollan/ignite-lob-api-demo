@@ -29,7 +29,7 @@ namespace LOB_API
                     state = "GA",
                     zip = "98052"
                 },
-                Name = "Main Branch",
+                Title = "Main Branch",
                 Phone_Number = "425 555 5555",
                 Manager_Email = "jeff.hollan@microsoft.com",
                 Manager_Name = "Jeff Hollan",
