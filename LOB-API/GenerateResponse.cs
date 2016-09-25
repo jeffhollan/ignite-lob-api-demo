@@ -8,6 +8,7 @@ namespace LOB_API
 {
     public static class GenerateResponse
     {
+        private static List<string> updatedProperties = new List<string>();
         public static List<Branch> GenerateBranches()
         {
             var branches = new List<Branch>();
@@ -20,6 +21,7 @@ namespace LOB_API
 
         public static Branch GenerateBranch()
         {
+            updatedProperties.Add("Lease_End_Date");
             return new Branch
             {
                 Address = new Models.Address
@@ -29,6 +31,7 @@ namespace LOB_API
                     state = "GA",
                     zip = "98052"
                 },
+                id = "153123",
                 Title = "Main Branch",
                 Phone_Number = "425 555 5555",
                 Manager_Email = "jeff.hollan@microsoft.com",
@@ -37,7 +40,8 @@ namespace LOB_API
                 Close_Hour = "17:00",
                 Open_Hour = "8:00",
                 Lease_End_Time = new DateTime(2017, 12, 15),
-                Lease_Start_Date = new DateTime(2016, 12, 16)
+                Lease_Start_Date = new DateTime(2016, 12, 16),
+                UpdatedProperties = updatedProperties
             };
         }
     }
