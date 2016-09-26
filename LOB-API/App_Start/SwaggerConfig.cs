@@ -2,6 +2,8 @@ using System.Web.Http;
 using WebActivatorEx;
 using LOB_API;
 using Swashbuckle.Application;
+using TRex;
+using TRex.Metadata;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
@@ -32,7 +34,8 @@ namespace LOB_API
                         // hold additional metadata for an API. Version and title are required but you can also provide
                         // additional fields by chaining methods off SingleApiVersion.
                         //
-                        c.SingleApiVersion("v1", "LOB_API");
+                        c.SingleApiVersion("v1", "Branch Management API");
+                        c.ReleaseTheTRex();
 
                         // If your API has multiple versions, use "MultipleApiVersions" instead of "SingleApiVersion".
                         // In this case, you must provide a lambda that tells Swashbuckle which actions should be

@@ -7,20 +7,21 @@ namespace LOB_API.Models
 {
     public class Branch
     {
-        public Address Address { get; set; }
+        
         public string Title { get; set; }
         public string Phone_Number { get; set; }
+        public DateTime Business_Start_Date { get; set; }
         public string Manager_Name { get; set; }
         public string Manager_Email { get; set; }
         public string Manager_Phone { get; set; }
-        public string Open_Hour { get; set; }
-        public string Close_Hour { get; set; }
+        
         public DateTime Lease_Start_Date { get; set; }
         public DateTime Lease_End_Time { get; set; }
 
+
         public List<string> UpdatedProperties { get; set; }
         public string id { get; set; }
-
+        public Address Address { get; set; }
     }
 
     public class Address

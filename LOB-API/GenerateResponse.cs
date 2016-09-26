@@ -37,8 +37,7 @@ namespace LOB_API
                 Manager_Email = "jeff.hollan@microsoft.com",
                 Manager_Name = "Jeff Hollan",
                 Manager_Phone = "801 368 2822",
-                Close_Hour = "17:00",
-                Open_Hour = "8:00",
+                Business_Start_Date = new DateTime(2016, 09, 26),
                 Lease_End_Time = new DateTime(2017, 12, 15),
                 Lease_Start_Date = new DateTime(2016, 12, 16),
                 UpdatedProperties = updatedProperties
